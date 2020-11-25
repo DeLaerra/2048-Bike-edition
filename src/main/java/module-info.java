@@ -3,9 +3,9 @@ module com.rin {
     requires javafx.fxml;
     requires org.slf4j;
 
-    opens com.rin.controller to javafx.fxml;
+    opens com.rin.controller to javafx.controls, javafx.fxml, org.slf4j;
     exports com.rin.controller;
 
-    opens com.rin to javafx.fxml;
+    opens com.rin to javafx.controls, javafx.fxml, org.slf4j;
     exports com.rin;
 }
